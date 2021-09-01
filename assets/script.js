@@ -1,6 +1,12 @@
+// /*https://getbootstrap.com/docs/4.0/components/forms/*/
+// https://getbootstrap.com/docs/4.0/layout/grid/
+// https://jqueryui.com/
+// 
+
+
+
+
 var currentDayEl = $('#currentDay');
-
-
 
 function displayDate() {
     var date = moment().format('MMM DD, YYYY');
@@ -8,6 +14,9 @@ function displayDate() {
 }
 
 displayDate();
+
+
+
 
 
 
