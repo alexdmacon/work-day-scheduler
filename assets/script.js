@@ -1,14 +1,3 @@
-// /*https://getbootstrap.com/docs/4.0/components/forms/*/
-// https://getbootstrap.com/docs/4.0/layout/grid/
-// https://jqueryui.com/
-// https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit
-// https://stackoverflow.com/questions/7892446/how-to-save-to-localstorage-from-textarea
-// https://stackoverflow.com/questions/34767630/typeerror-addeventlistener-is-not-a-function
-// https://stackoverflow.com/questions/42963091/how-to-save-the-value-of-textarea-to-localstorage-then-display-it-in-the-same-te
-// https://momentjs.com/
-// https://stackoverflow.com/questions/3842614/how-do-i-call-a-javascript-function-on-page-load
-
-
 var currentDayEl = $('#currentDay');
 var currentHour = moment().format('HH');
 var textAreaEls = $('textarea');
