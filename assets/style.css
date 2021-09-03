@@ -3,7 +3,8 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-/*https://getbootstrap.com/docs/4.0/components/forms/*/
+/*https://getbootstrap.com/docs/4.0/components/forms/   
+Bootstrap recognizes textarea element as form input*/
 textarea {
   background: transparent;
   border: none;

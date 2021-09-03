@@ -1,23 +1,34 @@
 // /*https://getbootstrap.com/docs/4.0/components/forms/*/
 // https://getbootstrap.com/docs/4.0/layout/grid/
 // https://jqueryui.com/
-// 
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit
 
 
 
 
 var currentDayEl = $('#currentDay');
+var currentHour = moment().format('HH');
+var textAreaEls = $('textarea');
+var timeBlockEls = $('.time-block');
+var date = moment().format('MMM DD, YYYY');
+var saveBtn = $('.saveBtn');
+var timeBlockHour = $('.hour')
+
+console.log(timeBlockEls);
+console.log(timeBlockHour);
 
 function displayDate() {
-    var date = moment().format('MMM DD, YYYY');
     currentDayEl.text(date);
 }
-
 displayDate();
 
+console.log(timeBlockHour[1].split);
 
 
 
+console.log(currentHour)
+
+textAreaEls.text.currentHour;
 
 
 
