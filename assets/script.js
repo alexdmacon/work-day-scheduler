@@ -12,19 +12,45 @@ var textAreaEls = $('textarea');
 var timeBlockEls = $('.time-block');
 var date = moment().format('MMM DD, YYYY');
 var saveBtn = $('.saveBtn');
-var timeBlockHour = $('.hour')
+var row = $('row');
 
-console.log(timeBlockEls);
-console.log(timeBlockHour);
 
 function displayDate() {
     currentDayEl.text(date);
 }
 displayDate();
 
-console.log(timeBlockHour[1].split);
 
+// Change text block color depending on time of day
+function colorCodeBlocks(){
 
+// Apply this function to each individual time block div
+    timeBlockEls.each(function () {
+
+// parse each individual time block and turn its HTML-defined id (a number corresponding to a military-time hour, in this case) into an integer that we can subsequently refer to using timeBlockHour
+        var timeBlockHour = parseInt($(this).attr("id"));
+        console.log(timeBlockHour);
+
+// compare the returned integer to the current hour and apply or remove the corresponding background color classes
+        if (timeBlockHour < currentHour) {
+            $(this).removeClass("future");
+            $(this).removeClass("present");
+            $(this).addClass("past");
+        }
+        else if (timeBlockHour == currentHour) {
+            $(this).removeClass("past");
+            $(this).removeClass("future");
+            $(this).addClass("present");
+        }
+        else {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");
+    }
+    }
+    )
+}
+colorCodeBlocks()
 
 console.log(currentHour)
 
