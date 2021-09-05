@@ -23,21 +23,21 @@ function colorCodeBlocks(){
         var timeBlockHour = parseInt($(this).attr("id"));
         console.log(timeBlockHour);
 
-// compare each individual time block id to the current hour and apply or remove the corresponding background color class to said text block (aka "this")
+// compare each individual time block id to the current hour and apply or remove the corresponding background color class to input text block child (textarea) of said time block (aka "this")
         if (timeBlockHour < currentHour) {
-            $(this).addClass("past");
-            $(this).removeClass("future");
-            $(this).removeClass("present");
+            $(this).children("textarea").addClass("past");
+            $(this).children("textarea").removeClass("future");
+            $(this).children("textarea").removeClass("present");
         }
         else if (timeBlockHour == currentHour) {
-            $(this).addClass("present");
-            $(this).removeClass("past");
-            $(this).removeClass("future");
+            $(this).children("textarea").addClass("present");
+            $(this).children("textarea").removeClass("past");
+            $(this).children("textarea").removeClass("future");
         }
         else {
-            $(this).addClass("future");
-            $(this).removeClass("present");
-            $(this).removeClass("past");
+            $(this).children("textarea").addClass("future");
+            $(this).children("textarea").removeClass("present");
+            $(this).children("textarea").removeClass("past");
     }
     }
     )
