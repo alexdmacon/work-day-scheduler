@@ -27,4 +27,3 @@ I referred to many web pages and references. These were some of the most helpful
 - https://stackoverflow.com/questions/42963091/how-to-save-the-value-of-textarea-to-localstorage-then-display-it-in-the-same-te
 - https://momentjs.com/
 - https://stackoverflow.com/questions/25167612/how-does-one-change-the-colour-of-a-div-based-on-current-time
-- https://write.corbpie.com/change-background-and-text-based-on-time-with-javascript/
