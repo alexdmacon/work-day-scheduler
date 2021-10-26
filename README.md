@@ -18,7 +18,6 @@ Input the description of an appointment/meeting/event into the text box next to 
 ## Credits
 Thanks as always to my wife and coding tutor, who provided invaluable advice and tips. Shout-out also to the SMU Full-Stack Web Development course instructors and teaching assistants. 
 I referred to many web pages and references. These were some of the most helpful:
-- https://getbootstrap.com/docs/4.0/components/forms/*/
 - https://getbootstrap.com/docs/4.0/layout/grid/
 - https://jqueryui.com/
 - https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit
